@@ -1,0 +1,41 @@
+@mixin large-desktop {
+  @media (min-width: #{$large-desktop}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$mobile}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: #{$phone-up - 1px}) {
+    @content;
+  }
+}
+
+@mixin mobile-down {
+  @media (max-width: #{$phone-down}) {
+    @content;
+  }
+}
+
+@mixin border-radius($border) {
+  -webkit-border-radius: $border;
+  -moz-border-radius: $border;
+  border-radius: $border;
+}
+
+@mixin box-shadow($box-shadow, $color: transparent) {
+  -moz-box-shadow:    $box-shadow $color;
+  -webkit-box-shadow: $box-shadow $color;
+  box-shadow:         $box-shadow $color;
+}

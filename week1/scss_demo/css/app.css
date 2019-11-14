@@ -1,0 +1,45 @@
+/**
+ * Global styles
+ */
+/**
+ * Component styles
+ */
+a {
+  color: #FF7414;
+}
+a:hover {
+  color: #3b3736;
+}
+
+nav {
+  border: 1px solid lightgray;
+  width: 100%;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  nav ul {
+    flex-direction: row;
+  }
+}
+nav ul li {
+  padding: 15px;
+}
+nav ul li.active, nav ul li:hover {
+  background-color: #FF0000;
+  color: #fff;
+}
+nav ul li.active a, nav ul li:hover a {
+  color: #fff !important;
+}
+nav ul li a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=app.css.map */
