@@ -15,5 +15,4 @@ This repository is for online course purpose that focus on web development. Here
 Each lessons is separated by week and identified by commit message
 ---
 
-* Week1: Sass Introduction
-
+* Week1: Sass and Grunt
