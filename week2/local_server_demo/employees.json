@@ -1,0 +1,16 @@
+{
+    "employees": [
+        {
+            "id": 1,
+            "name": "Sok San"
+        },
+        {
+            "id": 2,
+            "name": "Mey Long"
+        },
+        {
+            "id": 3,
+            "name": "Hong Heng"
+        }
+    ]
+}
