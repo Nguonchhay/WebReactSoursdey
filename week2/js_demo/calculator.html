@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="jumbotron text-center">
+    <h1>Simple Calculator</h1>
+    <p>Very simple calculator build in JavaScript</p> 
+  </div>
+    
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 offset-sm-4">
+        <h3>Calculator</h3>
+        <form name="calculator" class="form">
+          <div class="row form-group">
+            <div class="col-sm-3">First Value</div>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" name="value1" id="value1" placeholder="Enter First Value" />
+            </div>
+          </div>
+
+          <div class="row form-group">
+            <div class="col-sm-3">Second Value</div>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" name="value2" id="value2" placeholder="Enter Second Value" />
+            </div>
+          </div>
+
+          <div class="row form-group">
+            <div class="col-sm-12 text-center">
+              <button type="button" class="btn btn-primary">+</button>
+              <button type="button" class="btn btn-primary">-</button>
+              <button type="button" class="btn btn-primary">*</button>
+              <button type="button" class="btn btn-primary">/</button>
+              <button type="button" class="btn btn-primary">%</button>
+            </div>
+          </div>
+
+          <div class="row form-group">
+            <div class="col-sm-3">Result</div>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" name="result" id="result" readonly />
+            </div>
+          </div>
+      </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="calculator.js"></script>
+</body>
+</html>
