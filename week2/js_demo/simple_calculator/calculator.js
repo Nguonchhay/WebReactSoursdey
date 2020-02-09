@@ -14,3 +14,24 @@ function isNumberKey(evt) {
 
     return e.shiftKey ? false : true;
 }
+
+function sum(value1, value2) {
+    return value1 + value2;
+}
+
+function calculate(sign) {
+    const value1 = parseInt(document.getElementById('value1').value);
+    const value2 = parseInt(document.getElementById('value2').value);
+    let result = '';
+
+    switch (sign) {
+        case '+':
+            result = sum(value1, value2);
+            break;
+        case '-':
+            result = value1 - value2;
+            break;
+    }
+
+    document.getElementById('result').value = result;
+}
