@@ -1,13 +1,13 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
 
+import { switchLanguage } from './../../redux/actions/languageAction';
 
 const LanguageMenu = (props) => {
+    const dispatch = useDispatch();
+
     const changeLanguageHandler = lang => {
-        props.setState(
-            {
-                lang
-            }
-        );
+        dispatch(switchLanguage(lang));
     }
 
     return (

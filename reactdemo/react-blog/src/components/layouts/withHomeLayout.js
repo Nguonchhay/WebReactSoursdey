@@ -15,7 +15,7 @@ const withHomeLayout = (Page) => {
         
         return (
             <>
-                <Navigation {...props}/>
+                <Navigation/>
                 <Header/>
 
                 <div className="container">

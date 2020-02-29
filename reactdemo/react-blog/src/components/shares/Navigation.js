@@ -1,10 +1,14 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { useSelector } from 'react-redux'
+
 import LanguageMenu from './LanguageMenu';
 import { translate } from './../../utils';
 
 const Navigation = (props) => {
-    const lang = props.state.lang;
+    const lang = useSelector(
+        state => state.languageReducer.lang
+    );
 
     return (
         <nav className="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
@@ -34,7 +38,7 @@ const Navigation = (props) => {
                     </li>
                 </ul>
 
-                <LanguageMenu {...props} />
+                <LanguageMenu/>
                 </div>
             </div>
         </nav>
