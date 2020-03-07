@@ -1,8 +1,8 @@
-import React from 'react';
+import { SWITCH_LANGUAGE } from './actionType';
 
 export const switchLanguage = lang => {
     return {
-        type: 'SWITCH_LANGUAGE',
+        type: SWITCH_LANGUAGE,
         lang
     }
 }

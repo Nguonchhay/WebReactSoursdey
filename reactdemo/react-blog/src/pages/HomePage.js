@@ -5,7 +5,7 @@ import PostList from './../components/posts/PostList';
 const HomePage = (props) => {
   return (
     <div className="col-lg-8 col-md-10 mx-auto">
-        <PostList {...props} />
+        <PostList/>
       </div>
   );
 }
